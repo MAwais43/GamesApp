@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/myClass.dart';
 import 'package:sizer/sizer.dart';
 import 'GridView.dart';
 import 'MyTabs.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: mybody(),
+        home: myclass(),
       );
     });
   }
