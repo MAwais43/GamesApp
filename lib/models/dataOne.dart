@@ -14,10 +14,10 @@ class DataModel {
     required this.Class,
     required this.address,
 });
-
 }
 
 final data = [
+  DataModel(name: 'atif', rollNo: '22', Class: '6th', address: 'wwwww'),
   DataModel(name: 'Ahmad', rollNo: '9', address: 'Sargodha', Class: '10th'),
   DataModel(name: 'jawad', rollNo: '23', address: 'Sargodha', Class: '10th'),
   DataModel(name: 'qasim', rollNo: '33', address: 'Sargodha', Class: '10th'),
