@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/bottombar.dart';
+import 'package:myapp/cameraAccess.dart';
 import 'package:myapp/myClass.dart';
 import 'package:sizer/sizer.dart';
 import 'GridView.dart';
@@ -33,7 +34,8 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: bottombar(),
+        home: CameraGallery(),
+        // home: bottombar(),
       );
     });
   }
