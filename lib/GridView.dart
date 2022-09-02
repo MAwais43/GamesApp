@@ -8,6 +8,11 @@ class gridView extends StatefulWidget {
 }
 
 class _gridViewState extends State<gridView> {
+
+  bool islanguage = false;
+  String Eng = 'Home';
+  String Arb = 'الصفحة الرئيسية';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,13 +28,17 @@ class _gridViewState extends State<gridView> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                TextButton(
+                    onPressed: (){
+                      setState(() {
+                        islanguage = !islanguage;
+                      });
+                    },
+                    child: Text('Language')),
                 Icon(Icons.home,color: Colors.white,size: 50,),
-                Text('Home',style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w900
-                ),)
+                Text( islanguage == true ? Eng : Arb ),
               ],
+
             ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),

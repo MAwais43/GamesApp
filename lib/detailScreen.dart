@@ -13,10 +13,7 @@ class detailScreen extends StatefulWidget {
   @override
   State<detailScreen> createState() => _detailScreenState();
 }
-
 class _detailScreenState extends State<detailScreen> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
